@@ -30,7 +30,7 @@ sap.ui.define(
          * The lifecycle method onInit
          */
         onInit: function () {
-          this._getRouter()
+          this._getRouter() 
             .getRoute("StoreDetails")
             .attachPatternMatched(this._onPatternMatched, this);
           var oHelpModel = new JSONModel({
