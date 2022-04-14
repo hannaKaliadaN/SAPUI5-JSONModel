@@ -1,0 +1,120 @@
+<mvc:View controllerName="kaliada.hanna.controller.StoreList"
+	xmlns:viz="sap.viz.ui5.controls"
+	xmlns:vm="sap.ui.comp.variants"
+	xmlns:core="sap.ui.core"
+	xmlns:fb="sap.ui.comp.filterbar"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:f="sap.f"
+	xmlns:layout="sap.ui.layout" height="100%"
+	xmlns:layoutform="sap.ui.layout.form"
+	xmlns:table="sap.ui.table">
+	<f:DynamicPage id="dynamicPageId" showFooter="true">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<vm:VariantManagement standardItemText="{i18n>storeListTitle}"></vm:VariantManagement>
+				</f:heading>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+				<f:content>
+					<fb:FilterBar showClearOnFB="true" showFilterConfiguration="false" id="filterBar" search=".onFilterTable" clear="onReset" useToolbar="false">
+						<fb:filterItems>
+							<fb:FilterItem name="Name" label="{i18n>labelName}">
+								<fb:control>
+									<MultiInput id="multiInput" showValueHelp="true" valueHelpOnly="true" valueHelpRequest=".onValueHelpRequested" tokenUpdate=".toUpdateToken" suggestionItems="{
+										path: '/StoresName',
+										sorter: { path: 'Name' }
+									}">
+										<core:Item key="{Name}" text="{Name}" />
+									</MultiInput>
+
+								</fb:control>
+							</fb:FilterItem>
+							<fb:FilterItem name="Status" label="{i18n>labelStatus}">
+								<fb:control>
+									<Select selectedKey="{oHelpModel>/searchStatusValue}" id="selectStatus">
+										<core:Item key="" text="{i18n>selectItemStatusAll}" />
+										<core:Item key="Open" text="{i18n>selectItemStatusOpen}" />
+										<core:Item key="Close" text="{i18n>selectItemStatusClose}" />
+									</Select>
+								</fb:control>
+							</fb:FilterItem>
+						</fb:filterItems>
+					</fb:FilterBar>
+				</f:content>
+
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content class="sapUiNoContentPadding">
+			<VBox>
+				<Table id="idTable" updateFinished="onUpdateFinishedTable" selectionChange="selectedChange" sticky="HeaderToolbar,ColumnHeaders" class="sapFDynamicPageAlignContent" items="{/Stores}" mode="MultiSelect">
+					<headerToolbar>
+						<Toolbar>
+							<Title core:require="{ formatMessage: 'sap/base/strings/formatMessage' }" text="{parts: [
+								'i18n>titleTableStores',
+								'oHelpModel>/length'
+								],
+								formatter: 'formatMessage'}" level="H2" />
+							<ToolbarSpacer />
+							<Button text="{i18n>createStore}" press=".onCreateStorePress" />
+							<Button text="{i18n>deleteStore}" press=".onDeleteStorePress" enabled="{oHelpModel>/isSelected}" />
+						</Toolbar>
+					</headerToolbar>
+					<columns>
+						<Column>
+							<Label text="{i18n>labelName}" />
+						</Column>
+						<Column minScreenWidth="900px" demandPopin="true">
+							<Label text="{i18n>labelFloor}" wrapping="true" />
+						</Column>
+						<Column minScreenWidth="600px" demandPopin="true">
+							<Label text="{i18n>labelEstablished}" wrapping="true" />
+						</Column>
+						<Column minScreenWidth="800px" demandPopin="true">
+							<Label text="{i18n>labelPhoneNumber}" />
+						</Column>
+						<Column minScreenWidth="550px" demandPopin="true">
+							<Label text="{i18n>labelAddress}" />
+						</Column>
+						<Column minScreenWidth="500px" demandPopin="true">
+							<Label text="{i18n>labelEmail}" />
+						</Column>
+						<Column>
+							<Label text="{i18n>labelStatus}" />
+						</Column>
+
+					</columns>
+					<items>
+						<ColumnListItem type="Navigation" press="onTableItemPress" id="columnListItem">
+							<cells>
+								<ObjectIdentifier title="{Name}" />
+								<Text text="{FloorArea}" wrapping="false" />
+								<Text text="{
+									path: 'Established',
+									type: 'sap.ui.model.type.Date',
+									formatOptions: {
+										style: 'medium',
+										source: {
+											pattern: 'yyyy - MM - dd'
+										}
+									}
+								}" wrapping="false" />
+								<Text text="{PhoneNumber}" wrapping="false" />
+								<Text text="{Address}" wrapping="false" />
+								<Text text="{Email}" wrapping="false" />
+								<ObjectStatus text="{path:'Status'}" state="{path:'Status', formatter:'.formatter.getStatusColor'}" />
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+				
+			</VBox>
+
+		</f:content>
+
+	</f:DynamicPage>
+
+</mvc:View>

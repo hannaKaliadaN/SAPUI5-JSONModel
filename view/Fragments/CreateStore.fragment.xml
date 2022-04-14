@@ -1,0 +1,73 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog id="createStorePopup" title="{i18n>titleCreateStore}" afterClose="onAfterClose">
+		<f:SimpleForm maxContainerCols="1" layout="ResponsiveGridLayout" labelSpanL="12" labelSpanM="12" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
+
+			<f:content>
+				<Label text="{i18n>labelName}" />
+				<Input fieldGroupIds="createStoreInput" required="true" value="{
+					path: '/NewStore/Name',
+					type: 'sap.ui.model.type.String',
+					constraints: {
+								maxLength: 50,
+								minLength: 3
+								}
+					}" placeholder="{i18n>namePlaceholder}" change=".onChangeInput" />
+
+				<Label text="{i18n>labelEmail}" />
+				<Input fieldGroupIds="createStoreInput" required="true" value="{
+					path: '/NewStore/Email',
+					type: 'sap.ui.model.type.String',
+					constraints: {
+						search: '^\\w+[\\w-+\\.]*\\@\\w+([-\\.]\\w+)*\\.[a-zA-Z]{2,}$',
+						minimum: 3
+					}
+				}" placeholder="{i18n>emailPlaceholder}" change=".onChangeInput" />
+				<Label text="{i18n>labelPhoneNumber}" />
+				<MaskInput fieldGroupIds="createStoreInput" placeholder="{i18n>phoneNumberPlaceholder}" required="true" value="{path: '/NewStore/PhoneNumber',
+						type: 'sap.ui.model.type.String',
+							constraints: {
+							minLength: 9
+						}}" mask="(999) 99 999 99 99" change=".onChangeInput">
+					<rules>
+						<MaskInputRule maskFormatSymbol="C" regex="[0-9]" />
+					</rules>
+				</MaskInput>
+				<Label text="{i18n>labelAddress}" />
+				<Input fieldGroupIds="createStoreInput" required="true" value="{
+					path: '/NewStore/Address',
+					type: 'sap.ui.model.type.String',
+					constraints: {
+						maxLength: 100,
+						minLength: 3
+						}
+					}" placeholder="{i18n>addressPlaceholder}" change=".onChangeInput" />
+				<Label text="{i18n>labelEstablished}" />
+				<DatePicker id="a" fieldGroupIds="createStoreInput" value="{
+					path: '/NewStore/Established',
+					type: 'sap.ui.model.type.Date',
+					formatOptions: {
+						style: 'medium',
+						source: {
+							pattern: 'yyyy - MM - dd'
+						},
+						strictParsing: true
+					}
+				}" />
+				<Label text="{i18n>labelFloor}" />
+				<Input fieldGroupIds="createStoreInput" placeholder="{i18n>floorPlaceholder}" value="{
+					path: '/NewStore/FloorArea',
+					type: 'sap.ui.model.type.Integer'
+					}" change=".onChangeInput" />
+				<Label text="{i18n>labelStatus}" />
+				<Select selectedKey='{/NewStore/Status}' forceSelection="false" resetOnMissingKey='true'>
+					<core:Item key="Open" text="{i18n>selectItemStatusOpen}" />
+					<core:Item key="Close" text="{i18n>selectItemStatusClose}" />
+				</Select>
+			</f:content>
+		</f:SimpleForm>
+		<buttons>
+			<Button text="{i18n>createStore}" press="onCreatePressStore" />
+			<Button text="{i18n>cancelStore}" press="onCancelPressStore" />
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

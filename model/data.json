@@ -1,0 +1,412 @@
+{
+    "Stores": [
+        {
+            "Name": "Becker, Buckrge and Sipes",
+            "Email": "Daphne_Schaefer99@yahoo.com",
+            "PhoneNumber": "(375)444444444",
+            "Address": "KS, South, 675 Violette Ports",
+            "Established": "2021 - 04 - 23",
+            "FloorArea": 5827,
+            "id": 1,
+            "Status": "Open",
+            "Products": [
+                {
+                    "Name": "Gorgeous Frozen Car",
+                    "Price": 8503,
+                    "Specs": "Totam est rem velit explicabo sit similique. Reiciendis quia mollitia cupiditate. Qui quos vero cumque neque vitae ut. Est saepe quasi.",
+                    "Rating": 3,
+                    "SupplierInfo": "Nesciunt consequatur et excepturi voluptas odio maxime. Mollitia consequatur consequatur doloremque nam. Aliquam debitis quas rerum dolor eaque asperiores. Repellendus est mollitia repellendus dignissimos hic. Eum voluptatem vel id mollitia.",
+                    "MadeIn": "Samoa",
+                    "ProductionCompanyName": "Kovacek - Steuber",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 2,
+                    "storeId": 1
+                },
+                {
+                    "Name": "Fantastic Granite Shoes",
+                    "Price": 3698,
+                    "Specs": "Rerum eaque praesentium consequatur ut consequuntur optio unde culpa. Vel voluptas ipsa necessitatibus nihil cum. Est et quos laborum ut harum unde nihil.",
+                    "Rating": 2,
+                    "SupplierInfo": "Rem odio molestiae deleniti. Totam et quia. Quis occaecati neque unde. Eaque dolor ab vel. Soluta atque sunt quisquam omnis minima velit pariatur saepe enim.",
+                    "MadeIn": "Falkland Islands (Malvinas)",
+                    "ProductionCompanyName": "Prohaska, Schumm and Schimmel",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 3,
+                    "storeId": 1
+                },
+                {
+                    "Name": "ssccsc",
+                    "Price": 3516,
+                    "Specs": "Architecto corrupti numquam dicta consequatur. Sunt omnis debitis facilis. Officiis quibusdam sint sunt maxime autem. Nihil sit et architecto. Repellat et dolores distinctio aliquid saepe voluptas.",
+                    "Rating": 3,
+                    "SupplierInfo": "Perferendis fugit et consequuntur voluptas nostrum voluptatibus id velit. Vel perspiciatis voluptate sit ipsam quisquam earum non. Qui et molestiae sequi omnis suscipit itaque corporis. Tempore tempore consequatur numquam debitis eveniet maiores sit. Iste non reprehenderit eos sint et. Mollitia doloremque a consectetur voluptas molestiae.",
+                    "MadeIn": "China",
+                    "ProductionCompanyName": "Wiegand, Bechtelar and Lehner",
+                    "Status": "Ok",
+                    "Currency": "USD",
+                    "id": 4,
+                    "storeId": 1
+                },
+                {
+                    "Name": "Handmade Metal Salad",
+                    "Price": 8739,
+                    "Specs": "Velit eum est odit et sed itaque consequatur sit explicabo. Nostrum veniam maiores quas fugiat. Sed voluptatibus et optio eaque quia aut alias veniam. Hic temporibus maxime ratione ipsam. Laboriosam ullam quos incidunt quisquam.",
+                    "Rating": 4,
+                    "SupplierInfo": "Laborum rem dolorem non nemo reiciendis. Hic ut voluptatibus natus eveniet. Autem fugiat vel voluptas ea praesentium enim. Soluta odio ratione quia et et modi non quo expedita.",
+                    "MadeIn": "Niue",
+                    "ProductionCompanyName": "Swaniawski and Sons",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 5,
+                    "storeId": 1
+                },
+                {
+                    "Name": "Intelligent Granite Fish",
+                    "Price": 6198,
+                    "Specs": "Illo quis quam quibusdam ex sit quia architecto mollitia. Deleniti sit dolores eum ipsum optio quaerat libero maxime repellendus. Et architecto quo blanditiis odio. Est voluptatum fugit fugit amet dolorem porro qui amet voluptatibus. Vel quibusdam quisquam maxime. Ullam quaerat id nulla id et.",
+                    "Rating": 4,
+                    "SupplierInfo": "Nesciunt enim quae libero delectus natus quisquam. Facilis voluptate nulla rerum similique illo officia non. Perspiciatis laborum mollitia optio sit eligendi. Voluptas dolorum consequatur id deleniti eius est. Quae corporis eaque molestias optio omnis animi.",
+                    "MadeIn": "Cote d'Ivoire",
+                    "ProductionCompanyName": "Zemlak - Yost",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 6,
+                    "storeId": 1
+                }
+            ]
+          
+        },
+        {
+            "Name": "Gutkowski Group",
+            "Email": "Lillie93@gmail.com",
+            "PhoneNumber": "(375)455555554",
+            "Address": "MA, New, 040 Wyman Rest",
+            "Established": "2021 - 04 - 23",
+            "FloorArea": 8103,
+            "id": 3,
+            "Status": "Close",
+            "Products": [
+                {
+                    "Name": "Gorgeous Frozen Car",
+                    "Price": 8503,
+                    "Specs": "Totam est rem velit explicabo sit similique. Reiciendis quia mollitia cupiditate. Qui quos vero cumque neque vitae ut. Est saepe quasi.",
+                    "Rating": 3,
+                    "SupplierInfo": "Nesciunt consequatur et excepturi voluptas odio maxime. Mollitia consequatur consequatur doloremque nam. Aliquam debitis quas rerum dolor eaque asperiores. Repellendus est mollitia repellendus dignissimos hic. Eum voluptatem vel id mollitia.",
+                    "MadeIn": "Samoa",
+                    "ProductionCompanyName": "Kovacek - Steuber",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 2,
+                    "storeId": 3
+                },
+                {
+                    "Name": "Fantastic Granite Shoes",
+                    "Price": 3698,
+                    "Specs": "Rerum eaque praesentium consequatur ut consequuntur optio unde culpa. Vel voluptas ipsa necessitatibus nihil cum. Est et quos laborum ut harum unde nihil.",
+                    "Rating": 2,
+                    "SupplierInfo": "Rem odio molestiae deleniti. Totam et quia. Quis occaecati neque unde. Eaque dolor ab vel. Soluta atque sunt quisquam omnis minima velit pariatur saepe enim.",
+                    "MadeIn": "Falkland Islands (Malvinas)",
+                    "ProductionCompanyName": "Prohaska, Schumm and Schimmel",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 3,
+                    "storeId": 3
+                },
+                {
+                    "Name": "ssccsc",
+                    "Price": 3516,
+                    "Specs": "Architecto corrupti numquam dicta consequatur. Sunt omnis debitis facilis. Officiis quibusdam sint sunt maxime autem. Nihil sit et architecto. Repellat et dolores distinctio aliquid saepe voluptas.",
+                    "Rating": 3,
+                    "SupplierInfo": "Perferendis fugit et consequuntur voluptas nostrum voluptatibus id velit. Vel perspiciatis voluptate sit ipsam quisquam earum non. Qui et molestiae sequi omnis suscipit itaque corporis. Tempore tempore consequatur numquam debitis eveniet maiores sit. Iste non reprehenderit eos sint et. Mollitia doloremque a consectetur voluptas molestiae.",
+                    "MadeIn": "China",
+                    "ProductionCompanyName": "Wiegand, Bechtelar and Lehner",
+                    "Status": "Ok",
+                    "Currency": "USD",
+                    "id": 4,
+                    "storeId": 3
+                },
+                {
+                    "Name": "Handmade Metal Salad",
+                    "Price": 8739,
+                    "Specs": "Velit eum est odit et sed itaque consequatur sit explicabo. Nostrum veniam maiores quas fugiat. Sed voluptatibus et optio eaque quia aut alias veniam. Hic temporibus maxime ratione ipsam. Laboriosam ullam quos incidunt quisquam.",
+                    "Rating": 4,
+                    "SupplierInfo": "Laborum rem dolorem non nemo reiciendis. Hic ut voluptatibus natus eveniet. Autem fugiat vel voluptas ea praesentium enim. Soluta odio ratione quia et et modi non quo expedita.",
+                    "MadeIn": "Niue",
+                    "ProductionCompanyName": "Swaniawski and Sons",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 5,
+                    "storeId": 3
+                },
+                {
+                    "Name": "Intelligent Granite Fish",
+                    "Price": 6198,
+                    "Specs": "Illo quis quam quibusdam ex sit quia architecto mollitia. Deleniti sit dolores eum ipsum optio quaerat libero maxime repellendus. Et architecto quo blanditiis odio. Est voluptatum fugit fugit amet dolorem porro qui amet voluptatibus. Vel quibusdam quisquam maxime. Ullam quaerat id nulla id et.",
+                    "Rating": 4,
+                    "SupplierInfo": "Nesciunt enim quae libero delectus natus quisquam. Facilis voluptate nulla rerum similique illo officia non. Perspiciatis laborum mollitia optio sit eligendi. Voluptas dolorum consequatur id deleniti eius est. Quae corporis eaque molestias optio omnis animi.",
+                    "MadeIn": "Cote d'Ivoire",
+                    "ProductionCompanyName": "Zemlak - Yost",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 6,
+                    "storeId": 3
+                }
+            ]
+        },
+        {
+            "Name": "MacGyver and Sons",
+            "Email": "Dawson.Treutel19@yahoo.com",
+            "PhoneNumber": "(778)409286800",
+            "Address": "CO, North, 622 West Falls",
+            "Established": "2021 - 04 - 23",
+            "FloorArea": 9665,
+            "id": 4,
+            "Status": "Close",
+            "Products": [
+                {
+                    "Name": "Gorgeous Frozen Car",
+                    "Price": 8503,
+                    "Specs": "Totam est rem velit explicabo sit similique. Reiciendis quia mollitia cupiditate. Qui quos vero cumque neque vitae ut. Est saepe quasi.",
+                    "Rating": 3,
+                    "SupplierInfo": "Nesciunt consequatur et excepturi voluptas odio maxime. Mollitia consequatur consequatur doloremque nam. Aliquam debitis quas rerum dolor eaque asperiores. Repellendus est mollitia repellendus dignissimos hic. Eum voluptatem vel id mollitia.",
+                    "MadeIn": "Samoa",
+                    "ProductionCompanyName": "Kovacek - Steuber",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 2,
+                    "storeId": 4
+                },
+                {
+                    "Name": "Fantastic Granite Shoes",
+                    "Price": 3698,
+                    "Specs": "Rerum eaque praesentium consequatur ut consequuntur optio unde culpa. Vel voluptas ipsa necessitatibus nihil cum. Est et quos laborum ut harum unde nihil.",
+                    "Rating": 2,
+                    "SupplierInfo": "Rem odio molestiae deleniti. Totam et quia. Quis occaecati neque unde. Eaque dolor ab vel. Soluta atque sunt quisquam omnis minima velit pariatur saepe enim.",
+                    "MadeIn": "Falkland Islands (Malvinas)",
+                    "ProductionCompanyName": "Prohaska, Schumm and Schimmel",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 3,
+                    "storeId": 4
+                },
+                {
+                    "Name": "ssccsc",
+                    "Price": 3516,
+                    "Specs": "Architecto corrupti numquam dicta consequatur. Sunt omnis debitis facilis. Officiis quibusdam sint sunt maxime autem. Nihil sit et architecto. Repellat et dolores distinctio aliquid saepe voluptas.",
+                    "Rating": 3,
+                    "SupplierInfo": "Perferendis fugit et consequuntur voluptas nostrum voluptatibus id velit. Vel perspiciatis voluptate sit ipsam quisquam earum non. Qui et molestiae sequi omnis suscipit itaque corporis. Tempore tempore consequatur numquam debitis eveniet maiores sit. Iste non reprehenderit eos sint et. Mollitia doloremque a consectetur voluptas molestiae.",
+                    "MadeIn": "China",
+                    "ProductionCompanyName": "Wiegand, Bechtelar and Lehner",
+                    "Status": "Ok",
+                    "Currency": "USD",
+                    "id": 4,
+                    "storeId": 4
+                },
+                {
+                    "Name": "Handmade Metal Salad",
+                    "Price": 8739,
+                    "Specs": "Velit eum est odit et sed itaque consequatur sit explicabo. Nostrum veniam maiores quas fugiat. Sed voluptatibus et optio eaque quia aut alias veniam. Hic temporibus maxime ratione ipsam. Laboriosam ullam quos incidunt quisquam.",
+                    "Rating": 4,
+                    "SupplierInfo": "Laborum rem dolorem non nemo reiciendis. Hic ut voluptatibus natus eveniet. Autem fugiat vel voluptas ea praesentium enim. Soluta odio ratione quia et et modi non quo expedita.",
+                    "MadeIn": "Niue",
+                    "ProductionCompanyName": "Swaniawski and Sons",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 5,
+                    "storeId": 4
+                },
+                {
+                    "Name": "Intelligent Granite Fish",
+                    "Price": 6198,
+                    "Specs": "Illo quis quam quibusdam ex sit quia architecto mollitia. Deleniti sit dolores eum ipsum optio quaerat libero maxime repellendus. Et architecto quo blanditiis odio. Est voluptatum fugit fugit amet dolorem porro qui amet voluptatibus. Vel quibusdam quisquam maxime. Ullam quaerat id nulla id et.",
+                    "Rating": 4,
+                    "SupplierInfo": "Nesciunt enim quae libero delectus natus quisquam. Facilis voluptate nulla rerum similique illo officia non. Perspiciatis laborum mollitia optio sit eligendi. Voluptas dolorum consequatur id deleniti eius est. Quae corporis eaque molestias optio omnis animi.",
+                    "MadeIn": "Cote d'Ivoire",
+                    "ProductionCompanyName": "Zemlak - Yost",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 6,
+                    "storeId": 4
+                }
+            ]
+        },
+        {
+            "Name": "Bailey, Baumbach and Gottlieb",
+            "Email": "Samantha_Price@gmail.com",
+            "PhoneNumber": "(778)409286800",
+            "Address": "NV, South, 01316 Effertz Trail",
+            "Established": "2021 - 07 - 27",
+            "FloorArea": 3617,
+            "id": 5,
+            "Status": "Close",
+            "Products": [
+                {
+                    "Name": "Gorgeous Frozen Car",
+                    "Price": 8503,
+                    "Specs": "Totam est rem velit explicabo sit similique. Reiciendis quia mollitia cupiditate. Qui quos vero cumque neque vitae ut. Est saepe quasi.",
+                    "Rating": 3,
+                    "SupplierInfo": "Nesciunt consequatur et excepturi voluptas odio maxime. Mollitia consequatur consequatur doloremque nam. Aliquam debitis quas rerum dolor eaque asperiores. Repellendus est mollitia repellendus dignissimos hic. Eum voluptatem vel id mollitia.",
+                    "MadeIn": "Samoa",
+                    "ProductionCompanyName": "Kovacek - Steuber",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 2,
+                    "storeId": 5
+                },
+                {
+                    "Name": "Fantastic Granite Shoes",
+                    "Price": 3698,
+                    "Specs": "Rerum eaque praesentium consequatur ut consequuntur optio unde culpa. Vel voluptas ipsa necessitatibus nihil cum. Est et quos laborum ut harum unde nihil.",
+                    "Rating": 2,
+                    "SupplierInfo": "Rem odio molestiae deleniti. Totam et quia. Quis occaecati neque unde. Eaque dolor ab vel. Soluta atque sunt quisquam omnis minima velit pariatur saepe enim.",
+                    "MadeIn": "Falkland Islands (Malvinas)",
+                    "ProductionCompanyName": "Prohaska, Schumm and Schimmel",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 3,
+                    "storeId": 5
+                },
+                {
+                    "Name": "ssccsc",
+                    "Price": 3516,
+                    "Specs": "Architecto corrupti numquam dicta consequatur. Sunt omnis debitis facilis. Officiis quibusdam sint sunt maxime autem. Nihil sit et architecto. Repellat et dolores distinctio aliquid saepe voluptas.",
+                    "Rating": 3,
+                    "SupplierInfo": "Perferendis fugit et consequuntur voluptas nostrum voluptatibus id velit. Vel perspiciatis voluptate sit ipsam quisquam earum non. Qui et molestiae sequi omnis suscipit itaque corporis. Tempore tempore consequatur numquam debitis eveniet maiores sit. Iste non reprehenderit eos sint et. Mollitia doloremque a consectetur voluptas molestiae.",
+                    "MadeIn": "China",
+                    "ProductionCompanyName": "Wiegand, Bechtelar and Lehner",
+                    "Status": "Storage",
+                    "Currency": "USD",
+                    "id": 4,
+                    "storeId": 5
+                },
+                {
+                    "Name": "Handmade Metal Salad",
+                    "Price": 8739,
+                    "Specs": "Velit eum est odit et sed itaque consequatur sit explicabo. Nostrum veniam maiores quas fugiat. Sed voluptatibus et optio eaque quia aut alias veniam. Hic temporibus maxime ratione ipsam. Laboriosam ullam quos incidunt quisquam.",
+                    "Rating": 4,
+                    "SupplierInfo": "Laborum rem dolorem non nemo reiciendis. Hic ut voluptatibus natus eveniet. Autem fugiat vel voluptas ea praesentium enim. Soluta odio ratione quia et et modi non quo expedita.",
+                    "MadeIn": "Niue",
+                    "ProductionCompanyName": "Swaniawski and Sons",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 5,
+                    "storeId": 5
+                },
+                {
+                    "Name": "Intelligent Granite Fish",
+                    "Price": 6198,
+                    "Specs": "Illo quis quam quibusdam ex sit quia architecto mollitia. Deleniti sit dolores eum ipsum optio quaerat libero maxime repellendus. Et architecto quo blanditiis odio. Est voluptatum fugit fugit amet dolorem porro qui amet voluptatibus. Vel quibusdam quisquam maxime. Ullam quaerat id nulla id et.",
+                    "Rating": 4,
+                    "SupplierInfo": "Nesciunt enim quae libero delectus natus quisquam. Facilis voluptate nulla rerum similique illo officia non. Perspiciatis laborum mollitia optio sit eligendi. Voluptas dolorum consequatur id deleniti eius est. Quae corporis eaque molestias optio omnis animi.",
+                    "MadeIn": "Cote d'Ivoire",
+                    "ProductionCompanyName": "Zemlak - Yost",
+                    "Status": "Storage",
+                    "Currency": "USD",
+                    "id": 6,
+                    "storeId": 5
+                }
+            ]
+        },
+        {
+            "Name": "Williamson - Collins",
+            "Email": "Mac_Howell@hotmail.com",
+            "PhoneNumber": "323232",
+            "Address": "PA, Lake, 08828 Garett Glen",
+            "Established": "2021 - 03 - 14",
+            "FloorArea": 1921,
+            "id": 6,
+            "Status": "Open",
+            "Products": [
+                {
+                    "Name": "Gorgeous Frozen Car",
+                    "Price": 8503,
+                    "Specs": "Totam est rem velit explicabo sit similique. Reiciendis quia mollitia cupiditate. Qui quos vero cumque neque vitae ut. Est saepe quasi.",
+                    "Rating": 3,
+                    "SupplierInfo": "Nesciunt consequatur et excepturi voluptas odio maxime. Mollitia consequatur consequatur doloremque nam. Aliquam debitis quas rerum dolor eaque asperiores. Repellendus est mollitia repellendus dignissimos hic. Eum voluptatem vel id mollitia.",
+                    "MadeIn": "Samoa",
+                    "ProductionCompanyName": "Kovacek - Steuber",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 2,
+                    "storeId": 6
+                },
+                {
+                    "Name": "Fantastic Granite Shoes",
+                    "Price": 3698,
+                    "Specs": "Rerum eaque praesentium consequatur ut consequuntur optio unde culpa. Vel voluptas ipsa necessitatibus nihil cum. Est et quos laborum ut harum unde nihil.",
+                    "Rating": 2,
+                    "SupplierInfo": "Rem odio molestiae deleniti. Totam et quia. Quis occaecati neque unde. Eaque dolor ab vel. Soluta atque sunt quisquam omnis minima velit pariatur saepe enim.",
+                    "MadeIn": "Falkland Islands (Malvinas)",
+                    "ProductionCompanyName": "Prohaska, Schumm and Schimmel",
+                    "Status": "Storage",
+                    "Currency": "USD",
+                    "id": 3,
+                    "storeId": 6
+                },
+                {
+                    "Name": "ssccsc",
+                    "Price": 3516,
+                    "Specs": "Architecto corrupti numquam dicta consequatur. Sunt omnis debitis facilis. Officiis quibusdam sint sunt maxime autem. Nihil sit et architecto. Repellat et dolores distinctio aliquid saepe voluptas.",
+                    "Rating": 3,
+                    "SupplierInfo": "Perferendis fugit et consequuntur voluptas nostrum voluptatibus id velit. Vel perspiciatis voluptate sit ipsam quisquam earum non. Qui et molestiae sequi omnis suscipit itaque corporis. Tempore tempore consequatur numquam debitis eveniet maiores sit. Iste non reprehenderit eos sint et. Mollitia doloremque a consectetur voluptas molestiae.",
+                    "MadeIn": "China",
+                    "ProductionCompanyName": "Wiegand, Bechtelar and Lehner",
+                    "Status": "Ok",
+                    "Currency": "USD",
+                    "id": 4,
+                    "storeId": 6
+                },
+                {
+                    "Name": "Handmade Metal Salad",
+                    "Price": 8739,
+                    "Specs": "Velit eum est odit et sed itaque consequatur sit explicabo. Nostrum veniam maiores quas fugiat. Sed voluptatibus et optio eaque quia aut alias veniam. Hic temporibus maxime ratione ipsam. Laboriosam ullam quos incidunt quisquam.",
+                    "Rating": 4,
+                    "SupplierInfo": "Laborum rem dolorem non nemo reiciendis. Hic ut voluptatibus natus eveniet. Autem fugiat vel voluptas ea praesentium enim. Soluta odio ratione quia et et modi non quo expedita.",
+                    "MadeIn": "Niue",
+                    "ProductionCompanyName": "Swaniawski and Sons",
+                    "Status": "Storage",
+                    "Currency": "USD",
+                    "id": 5,
+                    "storeId": 6
+                },
+                {
+                    "Name": "Intelligent Granite Fish",
+                    "Price": 6198,
+                    "Specs": "Illo quis quam quibusdam ex sit quia architecto mollitia. Deleniti sit dolores eum ipsum optio quaerat libero maxime repellendus. Et architecto quo blanditiis odio. Est voluptatum fugit fugit amet dolorem porro qui amet voluptatibus. Vel quibusdam quisquam maxime. Ullam quaerat id nulla id et.",
+                    "Rating": 4,
+                    "SupplierInfo": "Nesciunt enim quae libero delectus natus quisquam. Facilis voluptate nulla rerum similique illo officia non. Perspiciatis laborum mollitia optio sit eligendi. Voluptas dolorum consequatur id deleniti eius est. Quae corporis eaque molestias optio omnis animi.",
+                    "MadeIn": "Cote d'Ivoire",
+                    "ProductionCompanyName": "Zemlak - Yost",
+                    "Status": "Out of stock",
+                    "Currency": "USD",
+                    "id": 6,
+                    "storeId": 6
+                }
+            ]
+        },
+        {
+            "Name": "Metz, Funk and Von",
+            "Email": "Henriette59@gmail.com",
+            "PhoneNumber": "(778)409286800",
+            "Address": "FL, North, 0264 Daugherty Ports",
+            "Established": "2021 - 07 - 27",
+            "FloorArea": 8151,
+            "id": 7,
+            "Status": "Open"
+        },
+        {
+            "Name": "Walker - Ullrich",
+            "Email": "Oren.Carroll@hotmail.com",
+            "PhoneNumber": "(778)409286800",
+            "Address": "HI, West, 3776 Adams Spring",
+            "Established": "2021 - 06 - 17",
+            "FloorArea": 6856,
+            "id": 8,
+            "Status": "Open"
+        }
+    ],
+    "isEdit": false
+ 
+}

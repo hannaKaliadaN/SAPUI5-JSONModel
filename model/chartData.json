@@ -1,0 +1,23 @@
+{
+    "items": [
+        {
+            "Year": "2019",
+            "Product1": "5980",
+            "Product2": "4590",
+            "Product3": "2543"
+        },
+        {
+            "Year": "2020",
+            "Product1": "3430",
+            "Product2": "8120",
+            "Product3": "3410"
+        },
+        {
+            "Year": "2021",
+            "Product1": "2535",
+            "Product2": "5815",
+            "Product3": "2315"
+        }
+      
+    ]
+}

@@ -1,0 +1,114 @@
+{
+  "sap.app": {
+    "id": "kaliada.hanna",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {
+      "jsonModel": {
+        "uri": "model/data.json",
+        "type": "JSON"
+      },
+      "jsonModel2":{
+        "uri": "model/chartData.json",
+        "type": "JSON"
+
+      }
+    }
+  },
+  "sap.ui": {
+    "supportedThemes": [
+      "sap_belize"
+    ]
+  },
+  "sap.ui5": {
+    "rootView": "kaliada.hanna.view.App",
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "kaliada.hanna.view",
+        "controlId": "RootApp",
+        "controlAggregation": "pages",
+        "bypassed": {
+          "target": [
+            "notFound"
+          ]
+        },
+        "async": true
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "StoreList",
+          "target": [
+            "storelist"
+          ]
+        },
+        {
+          "pattern": "store/{id}",
+          "name": "StoreDetails",
+          "target": [
+            "storeDetails"
+          ]
+        },
+        {
+          "pattern": "store/{storeId}/{id}",
+          "name": "ProductDetails",
+          "target": [
+            "productDetails"
+          ]
+        }
+      ],
+      "targets": {
+        "storelist": {
+          "viewName": "StoreList",
+          "viewId": "StoreList",
+          "viewLevel": 1
+        },
+        "storeDetails": {
+          "viewName": "StoreDetails",
+          "viewId": "StoreDetails",
+          "viewLevel": 2
+        },
+        "productDetails": {
+          "viewName": "ProductDetails",
+          "viewId": "ProductDetails",
+          "viewLevel": 3
+        },
+        "notFound": {
+          "viewName": "NotFound",
+          "viewId": "notFound"
+        }
+      }
+    },
+    "dependencies": {
+      "minUI5Version": "1.54.0",
+      "libs": {
+        "sap.m": {},
+        "sap.f": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "models": {
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "jsonModel"
+      },
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "kaliada.hanna.i18n.i18n"
+        }
+      },
+      "data": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "jsonModel2"
+      }
+    }
+  }
+}

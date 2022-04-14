@@ -1,0 +1,89 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.uxap"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:layout="sap.ui.layout"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:layoutform="sap.ui.layout.form"
+    xmlns:m="sap.m" controllerName="kaliada.hanna.controller.ProductDetails" height="100%">
+    <ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" showEditHeaderButton="true" upperCaseAnchorBar="false" showFooter="{/isEdit}">
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle>
+                <heading>
+                    <m:Title text="{Name}" wrapping="true" />
+                </heading>
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+        <headerContent>
+            <m:FlexBox wrap="Wrap">
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:ObjectAttribute title="{i18n>labelStatusProduct}" />
+                    <m:ObjectStatus text="{path:'Status'}" state="{path:'Status', formatter:'.formatter.getStatusProductColor'}" class="sapMObjectStatusLarge" />
+                </layout:VerticalLayout>
+            </m:FlexBox>
+        </headerContent>
+        <sections>
+            <ObjectPageSection titleUppercase="false" id="goalsSection" title="{i18n>titleGeneralSection}">
+                <subSections>
+                    <ObjectPageSubSection id="goalsSectionSS1">
+                        <blocks>
+                            <m:VBox class="sapUiNoContentPadding">
+                                <layoutform:SimpleForm editable="true" layout="ColumnLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+                                    <m:Label text="{i18n>labelPrice}" required="{/isEdit}" />
+                                    <m:Text text="{Price}{Currency}" visible="{= !${/isEdit}}"/>
+                                    <m:Input visible="{/isEdit}" value="{
+                                        path: 'Price',
+                                        type: 'sap.ui.model.type.Float',
+                                        constraints: {
+                                            minimum: 0.01
+                                        }
+                                     }" change=".onChangeInput" fieldGroupIds="productDetailsInput" />
+                                    <m:Label text="{i18n>labelRating}" />
+                                    <m:RatingIndicator editable="{/isEdit}" value="{Rating}" />
+                                    <m:Label text="{i18n>labelcountryOfOrigin}" />
+                                    <m:Text text="{MadeIn}" visible="{= !${/isEdit}}"/>
+                                    <m:Input visible="{/isEdit}" value="{
+                                        path: 'MadeIn',
+                                        type: 'sap.ui.model.type.String',
+                                        constraints: {
+                                            maxLength: 500
+                                        }
+                                        }" change=".onChangeInput" fieldGroupIds="productDetailsInput" />
+                                    <m:Label text="{i18n>labelCompanyName}" />
+                                    <m:Text text="{ProductionCompanyName}" visible="{= !${/isEdit}}"/>
+                                    <m:Input visible="{/isEdit}" value="{
+                                        path: 'ProductionCompanyName',
+                                        type: 'sap.ui.model.type.String',
+                                        constraints: {
+                                            maxLength: 500
+                                        }
+                                        }" change=".onChangeInput" fieldGroupIds="storeDetailsInput" />
+
+                                    <m:Label text="{i18n>labelSupplierInfo}" />
+                                    <m:Text text="{SupplierInfo}" visible="{= !${/isEdit}}"/>
+                                    <m:TextArea visible="{/isEdit}" value="{
+                                        path: 'SupplierInfo',
+                                        type: 'sap.ui.model.type.String',
+                                        constraints: {
+                                            maxLength: 500
+                                            }
+                                        }" change=".onChangeInput" fieldGroupIds="productDetailsInput" />
+                                    <m:Label text="{i18n>labelSpecs}" />
+                                    <m:Text text="{Specs}" visible="{= !${/isEdit}}"/>
+                                    <m:TextArea visible="{/isEdit}" value="{
+                                        path: 'Specs',
+                                        type: 'sap.ui.model.type.String',
+                                        constraints: {
+                                            maxLength: 500
+                                            }
+                                        }" change=".onChangeInput" fieldGroupIds="productDetailsInput" />
+                                </layoutform:SimpleForm>
+
+                            </m:VBox>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+        </sections>
+    </ObjectPageLayout>
+</mvc:View>

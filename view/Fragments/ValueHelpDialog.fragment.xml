@@ -1,0 +1,4 @@
+<core:FragmentDefinition xmlns="sap.ui.comp.valuehelpdialog" xmlns:core="sap.ui.core">
+    <ValueHelpDialog title="Stores Names" ok=".onValueHelpOkPress" cancel=".onValueHelpCancelPress" afterClose=".onValueHelpAfterClose" 
+    key="Name" descriptionKey="Name" tokenDisplayBehaviour="descriptionOnly"></ValueHelpDialog>
+</core:FragmentDefinition>

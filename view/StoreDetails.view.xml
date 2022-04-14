@@ -1,0 +1,67 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.uxap"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:layout="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:layoutform="sap.ui.layout.form"
+    xmlns:chart="sap.suite.ui.commons"
+    xmlns:m="sap.m" controllerName="kaliada.hanna.controller.StoreDetails" height="100%">
+    <ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" showEditHeaderButton="true" upperCaseAnchorBar="false" showFooter="{/isEdit}">
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle>
+                <heading>
+                    <m:Title text="{Name}" wrapping="true" />
+                </heading>
+                <actions>
+                    <m:Button text="{i18n>editStore}" type="Emphasized" press="onEditProduct" visible="{= !${/isEdit}}"></m:Button>
+                </actions>
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+        <headerContent>
+            <m:FlexBox wrap="Wrap">
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:ObjectAttribute title="{i18n>labelStatus}" />
+                    <m:ObjectStatus text="{path:'Status'}" state="{path:'Status', formatter:'.formatter.getStatusColor'}" class="sapMObjectStatusLarge" />
+                </layout:VerticalLayout>
+            </m:FlexBox>
+        </headerContent>
+        <sections>
+            <ObjectPageSection titleUppercase="false" id="goalsSection" title="{i18n>titleGeneralSection}">
+                <subSections>
+                    <ObjectPageSubSection id="goalsSectionSS1">
+                        <blocks>
+                            <core:Fragment fragmentName="kaliada.hanna.view.Fragments.StoreDetails.GeneralSection" type="XML" id="fragmentGeneral"/>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection titleUppercase="false">
+                <subSections>
+                    <ObjectPageSubSection title="{i18n>titleProductsSection}" titleUppercase="false">
+                        <blocks>
+                            <core:Fragment fragmentName="kaliada.hanna.view.Fragments.StoreDetails.ProductInformation" type="XML" id="fragmentProduct"/>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection titleUppercase="false">
+                <subSections>
+                    <ObjectPageSubSection title="{i18n>titleChartSection}" titleUppercase="false">
+                        <blocks>
+                            <viz:VizFrame xmlns="sap.viz" id="idStackedChart" width="100%" />
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+
+        </sections>
+        <footer>
+            <m:OverflowToolbar>
+                <m:Button icon="sap-icon://alert" text="{= ${message>/}.length }" visible="{= ${message>/}.length > 0 }" type="Emphasized" press="onMessagePopoverPress" />
+                <m:ToolbarSpacer />
+                <m:Button type="Emphasized" text="{i18n>saveProduct}" press="onSaveProduct" />
+                <m:Button  text="{i18n>cancelProduct}" press="onCancelProduct" />
+            </m:OverflowToolbar>
+        </footer>
+    </ObjectPageLayout>
+</mvc:View>

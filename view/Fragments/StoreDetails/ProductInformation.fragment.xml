@@ -1,0 +1,154 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<Table id="idTableProduct" select="onTableProductItemSelect" selectionChange="selectedChange" class="sapFDynamicPageAlignContent" fixedLayout="Strict" items="{Products}" mode="{= ${/isEdit} ? 'MultiSelect' : 'None' }">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="{i18n>titleProductsTable}"></Title>
+				<ToolbarSpacer />
+				<SearchField width="400px" placeholder="{i18n>inputPlaceholder}" search="onProductsSearch" />
+				<Button text="{i18n>deleteProduct}" enabled="{oHelpModel>/isSelected}" visible="{/isEdit}" press="onDeleteProduct" />
+				<Button text="{i18n>addProduct}" visible="{/isEdit}" press="onCreateProduct" />
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column>
+				<HBox alignItems="Center">
+					<Button type="Transparent" icon="sap-icon://{
+							path: 'oHelpModel>/sortType/sortTypeName',
+							formatter: '.formatter.sortTypeFormatter'
+						}" press=".onSortButtonPress('Name')" />
+					<Label text="{i18n>labelName}" />
+				</HBox>
+			</Column>
+			<Column>
+				<HBox alignItems="Center">
+					<Button type="Transparent" icon="sap-icon://{
+							path: 'oHelpModel>/sortType/sortTypePrice',
+							formatter: '.formatter.sortTypeFormatter'
+						}" press=".onSortButtonPress('Price')" />
+					<Label text="{i18n>labelPrice}" />
+				</HBox>
+			</Column>
+			<Column>
+				<HBox alignItems="Center">
+					<Button type="Transparent" icon="sap-icon://{
+							path: 'oHelpModel>/sortType/sortTypeSpecs',
+							formatter: '.formatter.sortTypeFormatter'
+						}" press=".onSortButtonPress('Specs')" />
+					<Label text="{i18n>labelSpecs}" />
+				</HBox>
+			</Column>
+			<Column>
+				<HBox alignItems="Center">
+					<Button type="Transparent" icon="sap-icon://{
+							path: 'oHelpModel>/sortType/sortTypeSupplierInfo',
+							formatter: '.formatter.sortTypeFormatter'
+						}" press=".onSortButtonPress('SupplierInfo')" />
+					<Label text="{i18n>labelSupplierInfo}" />
+				</HBox>
+
+			</Column>
+			<Column>
+				<HBox alignItems="Center">
+					<Button type="Transparent" icon="sap-icon://{
+							path: 'oHelpModel>/sortType/sortTypeMadeIn',
+							formatter: '.formatter.sortTypeFormatter'
+						}" press=".onSortButtonPress('MadeIn')" />
+					<Label text="{i18n>labelCountryOfOrigin}" wrapping="true" />
+				</HBox>
+			</Column>
+			<Column>
+				<HBox alignItems="Center">
+					<Button type="Transparent" icon="sap-icon://{
+							path: 'oHelpModel>/sortType/sortTypeProductionCompanyName',
+							formatter: '.formatter.sortTypeFormatter'
+						}" press=".onSortButtonPress('ProductionCompanyName')" />
+					<Label text="{i18n>labelCompanyName}" wrapping="true" />
+				</HBox>
+			</Column>
+			<Column minScreenWidth="620px" demandPopin='true'>
+				<HBox alignItems="Center">
+					<Button type="Transparent" icon="sap-icon://{
+							path: 'oHelpModel>/sortType/sortTypeRating',
+							formatter: '.formatter.sortTypeFormatter'
+						}" press=".onSortButtonPress('Rating')" />
+					<Label text="{i18n>labelRating}" />
+				</HBox>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Navigation" press="onTableProductItemPress" id="columnListItem">
+				<cells>
+					<HBox>
+						<ObjectIdentifier title="{Name}" visible="{= !${/isEdit}}" />
+						<Input name="Name" visible="{/isEdit}" value="{
+							path: 'Name',
+							type: 'sap.ui.model.type.String',
+							constraints: {
+								maxLength: 50,
+								minLength: 3
+							}
+							}" change=".onChangeInput" fieldGroupIds="storeDetailsInput" />
+					</HBox>
+					<HBox>
+						<ObjectNumber number="{
+							path: 'Price',
+							type: 'sap.ui.model.type.Float'
+						 }" unit="{Currency}" visible="{= !${/isEdit}}" />
+						<Input visible="{/isEdit}" name="Price" value="{
+							path: 'Price',
+							type: 'sap.ui.model.type.Float',
+							constraints: {
+								minimum: 0.01
+							}
+						 }" change=".onChangeInput" fieldGroupIds="storeDetailsInput" />
+					</HBox>
+					<HBox>
+						<Text text="{Specs}" wrapping="false" visible="{= !${/isEdit}}" />
+						<Input visible="{/isEdit}" name="Specs" value="{
+							path: 'Specs',
+							type: 'sap.ui.model.type.String',
+							constraints: {
+								maxLength: 500
+								}
+							}" change=".onChangeInput" fieldGroupIds="storeDetailsInput" />
+					</HBox>
+					<HBox>
+						<Text text="{SupplierInfo}" wrapping="false" visible="{= !${/isEdit}}" />
+						<Input visible="{/isEdit}" name="SupplierInfo" value="{
+							path: 'SupplierInfo',
+							type: 'sap.ui.model.type.String',
+							constraints: {
+								maxLength: 500
+								}
+							}" change=".onChangeInput" fieldGroupIds="storeDetailsInput" />
+					</HBox>
+					<HBox>
+						<Text text="{MadeIn}" wrapping="false" visible="{= !${/isEdit}}" />
+						<Input visible="{/isEdit}"  name="MadeIn" value="{
+							path: 'MadeIn',
+							type: 'sap.ui.model.type.String',
+							constraints: {
+								maxLength: 500
+							}
+							}" change=".onChangeInput" fieldGroupIds="storeDetailsInput" />
+					</HBox>
+					<HBox>
+						<Text text="{ProductionCompanyName}" wrapping="false" visible="{= !${/isEdit}}" />
+						<Input visible="{/isEdit}" name="ProductionCompanyName" value="{
+							path: 'ProductionCompanyName',
+							type: 'sap.ui.model.type.String',
+							constraints: {
+								maxLength: 500
+							}
+							}" change=".onChangeInput" fieldGroupIds="storeDetailsInput" />
+					</HBox>
+					<HBox>
+						<RatingIndicator id="RI_default" maxValue="5" class="sapUiSmallMarginBottom" editable="{/isEdit}" value="{Rating}" />
+					</HBox>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>
