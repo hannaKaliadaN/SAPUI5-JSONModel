@@ -1,14 +1,11 @@
 <mvc:View controllerName="kaliada.hanna.controller.StoreList"
-	xmlns:viz="sap.viz.ui5.controls"
 	xmlns:vm="sap.ui.comp.variants"
 	xmlns:core="sap.ui.core"
 	xmlns:fb="sap.ui.comp.filterbar"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:f="sap.f"
-	xmlns:layout="sap.ui.layout" height="100%"
-	xmlns:layoutform="sap.ui.layout.form"
-	xmlns:table="sap.ui.table">
+	height="100%">
 	<f:DynamicPage id="dynamicPageId" showFooter="true">
 		<f:title>
 			<f:DynamicPageTitle>
@@ -27,7 +24,7 @@
 									<MultiInput id="multiInput" showValueHelp="true" valueHelpOnly="true" valueHelpRequest=".onValueHelpRequested" tokenUpdate=".toUpdateToken" suggestionItems="{
 										path: '/StoresName',
 										sorter: { path: 'Name' }
-									}">
+										}">
 										<core:Item key="{Name}" text="{Name}" />
 									</MultiInput>
 

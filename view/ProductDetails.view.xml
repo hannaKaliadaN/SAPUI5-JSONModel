@@ -1,11 +1,10 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.uxap"
-    xmlns:viz="sap.viz.ui5.controls"
     xmlns:layout="sap.ui.layout"
-    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
-    xmlns:viz.data="sap.viz.ui5.data"
     xmlns:layoutform="sap.ui.layout.form"
-    xmlns:m="sap.m" controllerName="kaliada.hanna.controller.ProductDetails" height="100%">
+    xmlns:m="sap.m"
+    controllerName="kaliada.hanna.controller.ProductDetails"
+    height="100%">
     <ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" showEditHeaderButton="true" upperCaseAnchorBar="false" showFooter="{/isEdit}">
         <headerTitle>
             <ObjectPageDynamicHeaderTitle>

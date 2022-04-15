@@ -26,7 +26,7 @@ sap.ui.define(
       },
       /**
        * Return a name of icon
-       * @param {String} sStatus status
+       * @param {String} sSortType status
        * @return {String} name of icon
        *
        */
@@ -46,6 +46,12 @@ sap.ui.define(
           }
         }
       },
+        /**
+       * Return value state for status
+       * @param {String} sStatus status
+       * @return {String} name of icon
+       *
+       */
       getStatusProductColor: function (sStatus) {
         switch (sStatus) {
           case "Out of stock": {

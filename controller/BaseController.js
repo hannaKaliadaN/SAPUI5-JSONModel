@@ -5,7 +5,6 @@ sap.ui.define(
     "../utils/constants",
     "../mixins/Validation",
     "sap/ui/core/ValueState",
-    "sap/ui/core/Fragment",
     "sap/m/MessageBox",
     "sap/m/MessageToast",
     "sap/base/util/merge",
@@ -16,7 +15,6 @@ sap.ui.define(
     constants,
     Validation,
     ValueState,
-    Fragment,
     MessageBox,
     MessageToast,
     merge

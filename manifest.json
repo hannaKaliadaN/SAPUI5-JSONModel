@@ -13,10 +13,9 @@
         "uri": "model/data.json",
         "type": "JSON"
       },
-      "jsonModel2":{
+      "jsonModel2": {
         "uri": "model/chartData.json",
         "type": "JSON"
-
       }
     }
   },

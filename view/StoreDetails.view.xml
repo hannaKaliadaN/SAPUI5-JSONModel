@@ -3,9 +3,9 @@
     xmlns:viz="sap.viz.ui5.controls"
     xmlns:layout="sap.ui.layout"
     xmlns:core="sap.ui.core"
-    xmlns:layoutform="sap.ui.layout.form"
-    xmlns:chart="sap.suite.ui.commons"
-    xmlns:m="sap.m" controllerName="kaliada.hanna.controller.StoreDetails" height="100%">
+    xmlns:m="sap.m"
+    controllerName="kaliada.hanna.controller.StoreDetails" 
+    height="100%">
     <ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" showEditHeaderButton="true" upperCaseAnchorBar="false" showFooter="{/isEdit}">
         <headerTitle>
             <ObjectPageDynamicHeaderTitle>
@@ -53,7 +53,6 @@
                     </ObjectPageSubSection>
                 </subSections>
             </ObjectPageSection>
-
         </sections>
         <footer>
             <m:OverflowToolbar>

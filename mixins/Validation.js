@@ -11,13 +11,11 @@ sap.ui.define(["sap/ui/core/ValueState"], function (ValueState) {
       var sValueState = ValueState.None;
       var bValidationError = false;
       var oBinding = oInput.getBinding("value");
-      // console.log(this._getMessageManager().getMessageModel())
       try {
         oBinding.getType().validateValue(oInput.getValue());
       } catch (oException) {
         sValueState = ValueState.Error;
         bValidationError = true;
-        // this._getMessageManager().addMessage()
       }
       oInput.setValueState(sValueState);
       return bValidationError;

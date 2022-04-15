@@ -102,7 +102,7 @@
 							constraints: {
 								minimum: 0.01
 							}
-						 }" change=".onChangeInput" fieldGroupIds="storeDetailsInput" />
+						 	}" change=".onChangeInput" fieldGroupIds="storeDetailsInput" />
 					</HBox>
 					<HBox>
 						<Text text="{Specs}" wrapping="false" visible="{= !${/isEdit}}" />

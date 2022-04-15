@@ -19,12 +19,12 @@
             <Label text="{i18n>labelEmail}" class="sapUiNoContentPadding" />
             <Text text="{Email}" class="sapUiNoContentPadding" visible="{= !${/isEdit}}" />
             <Input  required="{/isEdit}" fieldGroupIds="storeDetailsInput" value="{
-                    path: 'Email',
-                    type: 'sap.ui.model.type.String',
-                    constraints: {
-                        search: '^\\w+[\\w-+\\.]*\\@\\w+([-\\.]\\w+)*\\.[a-zA-Z]{2,}$',
-                        minimum: 3
-                    }}" visible="{/isEdit}" change=".onChangeInput" name="Email"/>
+                path: 'Email',
+                type: 'sap.ui.model.type.String',
+                constraints: {
+                    search: '^\\w+[\\w-+\\.]*\\@\\w+([-\\.]\\w+)*\\.[a-zA-Z]{2,}$',
+                    minimum: 3
+                }}" visible="{/isEdit}" change=".onChangeInput" name="Email"/>
             <Label text="{i18n>labelPhoneNumber}" />
             <Text text="{PhoneNumber}" visible="{= !${/isEdit}}" />
             <MaskInput  required="{/isEdit}" fieldGroupIds="storeDetailsInput" value="{path: 'PhoneNumber',
@@ -40,43 +40,43 @@
             <Label text="{i18n>labelAddress}" />
             <Text text="{Address}" visible="{= !${/isEdit}}" />
             <Input  required="{/isEdit}" fieldGroupIds="storeDetailsInput" visible="{/isEdit}" value="{
-                    path: 'Address',
-                    type: 'sap.ui.model.type.String',
-                    constraints: {
-                        maxLength: 100,
-                        minLength: 3
-                        }
-                    }" name="Address" change=".onChangeInput" />
+                path: 'Address',
+                type: 'sap.ui.model.type.String',
+                constraints: {
+                    maxLength: 100,
+                    minLength: 3
+                    }
+                }" name="Address" change=".onChangeInput" />
             <Label text="{i18n>labelEstablished}" />
             <Text text="{
-                    path: 'Established',
-                    type: 'sap.ui.model.type.Date',
-                    formatOptions: {
-                        style: 'medium',
-                        source: {
-                            pattern: 'yyyy - MM - dd'
-                        }
+                path: 'Established',
+                type: 'sap.ui.model.type.Date',
+                formatOptions: {
+                    style: 'medium',
+                    source: {
+                        pattern: 'yyyy - MM - dd'
                     }
-                }" wrapping="false" visible="{= !${/isEdit}}" validationError="onChangeInput" />
+                }
+            }" wrapping="false" visible="{= !${/isEdit}}" validationError="onChangeInput" />
             <DatePicker  fieldGroupIds="storeDetailsInput" value="{
-                    path: 'Established',
-                    type: 'sap.ui.model.type.Date',
+                path: 'Established',
+                type: 'sap.ui.model.type.Date',
+                formatOptions: {
+                    style: 'medium',
+                    source: {
+                        pattern: 'yyyy - MM - dd'
+                    },
                     formatOptions: {
-                        style: 'medium',
-                        source: {
-                            pattern: 'yyyy - MM - dd'
-                        },
-                        formatOptions: {
-                            style: 'short'
-                        }
+                        style: 'short'
                     }
+                }
             }" change=".onChangeInput" name="Established" visible="{/isEdit}" />
             <Label text="{i18n>labelFloor}" />
             <Text text="{FloorArea}" visible="{= !${/isEdit}}" />
             <Input fieldGroupIds="storeDetailsInput" visible="{/isEdit}" value="{
-                    path: 'FloorArea',
-                    type: 'sap.ui.model.type.Float'
-                    }" change=".onChangeInput" name="FloorArea" />
+                path: 'FloorArea',
+                type: 'sap.ui.model.type.Float'
+                }" change=".onChangeInput" name="FloorArea" />
         </f:content>
     </f:SimpleForm>
 </core:FragmentDefinition>
