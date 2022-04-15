@@ -7,6 +7,7 @@ sap.ui.define(
     "sap/ui/core/Fragment",
     "sap/m/SearchField",
     "../mixins/StoreList/Filters",
+    "sap/ui/core/ValueState",
     "sap/base/util/merge",
   ],
   function (
@@ -17,6 +18,7 @@ sap.ui.define(
     Fragment,
     SearchField,
     Filters,
+    ValueState,
     merge
   ) {
     "use strict";
@@ -51,7 +53,13 @@ sap.ui.define(
           });
           oFilterBar.setBasicSearch(oBasicSearch);
         },
-
+        /**
+         * Return the table
+         * @return {sap.m.Table} Table
+         */
+        _getTable: function () {
+          return this.getView().byId("idTable");
+        },
         /**
          * Update dates after change datas in table
          */
@@ -142,6 +150,17 @@ sap.ui.define(
               this.onCancelPressStore();
             }
           }
+        },
+        /**
+       * Set default 'valueState' property for inputs
+       * @param {String} sName name of popup
+
+       */
+        _destroyValueState: function (sName) {
+          var aInputs = this._getInputs(sName);
+          aInputs.forEach((oInput) => {
+            oInput.setValueState(ValueState.None);
+          });
         },
         /**
          * Close active popup, reset validation, reset changes

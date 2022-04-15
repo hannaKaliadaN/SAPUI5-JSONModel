@@ -4,7 +4,6 @@ sap.ui.define(
     "../utils/formatter",
     "../utils/constants",
     "../mixins/Validation",
-    "sap/ui/core/ValueState",
     "sap/m/MessageBox",
     "sap/m/MessageToast",
     "sap/base/util/merge",
@@ -14,7 +13,6 @@ sap.ui.define(
     formatter,
     constants,
     Validation,
-    ValueState,
     MessageBox,
     MessageToast,
     merge
@@ -26,27 +24,10 @@ sap.ui.define(
          * Load formatters
          */
         formatter: formatter,
-        /**
-         * Load constant sort type
-         */
-        sortType: constants.sortType,
-        // /**
-        //  * Load constant new store
-        //  */
-        // newStore: constants.newStore,
-        // /**
-        //  * Load constant new product
-        //  */
-        // newProduct: constants.newProduct,
-        /**
-         * Load constant nextSortType
-         */
-        nextSortType: constants.nextSortType,
-        /**
+         /**
          * Load constant
          */
         constants: constants,
-        oninit() {},
         /**
          * Get main model
          * @return {sap.ui.model.json.JSONModel} return Json model
@@ -115,13 +96,7 @@ sap.ui.define(
         _getMessageManager: function () {
           return sap.ui.getCore().getMessageManager();
         },
-        /**
-         * Return the table
-         * @return {sap.m.Table} Table
-         */
-        _getTable: function () {
-          return this.getView().byId("idTable");
-        },
+       
 
         /**
          * Get inputs
@@ -155,18 +130,6 @@ sap.ui.define(
           return aArray.length
             ? aArray.map((oInstant) => oInstant.id).sort((a, b) => b - a)[0] + 1
             : 1;
-        },
-
-        /**
-       * Set default 'valueState' property for inputs
-       * @param {String} sName name of popup
-
-       */
-        _destroyValueState: function (sName) {
-          var aInputs = this._getInputs(sName);
-          aInputs.forEach((oInput) => {
-            oInput.setValueState(ValueState.None);
-          });
         },
         /**
          * This function fire when change selection of the table

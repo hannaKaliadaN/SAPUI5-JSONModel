@@ -2,9 +2,8 @@
     xmlns="sap.uxap"
     xmlns:layout="sap.ui.layout"
     xmlns:layoutform="sap.ui.layout.form"
-    xmlns:m="sap.m"
-    controllerName="kaliada.hanna.controller.ProductDetails"
-    height="100%">
+    xmlns:m="sap.m" controllerName="kaliada.hanna.controller.ProductDetails"
+    xmlns:core="sap.ui.core" height="100%">
     <ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" showEditHeaderButton="true" upperCaseAnchorBar="false" showFooter="{/isEdit}">
         <headerTitle>
             <ObjectPageDynamicHeaderTitle>
@@ -57,7 +56,13 @@
                                             maxLength: 500
                                         }
                                         }" change=".onChangeInput" fieldGroupIds="storeDetailsInput" />
-
+                                    <m:Label text="{i18n>labelStatus}" />
+                                    <m:Text text="{Status}" visible="{= !${/isEdit}}" />
+                                    <m:Select selectedKey='{Status}' visible="{/isEdit}" forceSelection="false" resetOnMissingKey='true'>
+                                        <core:Item key="Out of stock" text="{i18n>selectItemStatusOutofStock}" />
+                                        <core:Item key="Storage" text="{i18n>selectItemStatusStorage}" />
+                                        <core:Item key="Ok" text="{i18n>selectItemStatusOK}" />
+                                    </m:Select>
                                     <m:Label text="{i18n>labelSupplierInfo}" />
                                     <m:Text text="{SupplierInfo}" visible="{= !${/isEdit}}"/>
                                     <m:TextArea visible="{/isEdit}" value="{
@@ -76,8 +81,8 @@
                                             maxLength: 500
                                             }
                                         }" change=".onChangeInput" fieldGroupIds="productDetailsInput" />
-                                </layoutform:SimpleForm>
 
+                                </layoutform:SimpleForm>
                             </m:VBox>
                         </blocks>
                     </ObjectPageSubSection>

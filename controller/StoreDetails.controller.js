@@ -165,7 +165,6 @@ sap.ui.define(
           var aErrorInputs = this._getInputs("storeDetails").filter(
             (oInput) => oInput.getValueState() === ValueState.Error
           );
-
           var aPathAndNames = aErrorInputs.map((oInput) => [
             oInput.getBindingContext().getPath(),
             oInput.getName(),

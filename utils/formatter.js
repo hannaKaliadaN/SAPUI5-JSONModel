@@ -5,10 +5,6 @@ sap.ui.define(
 
     return {
       /**
-       * Load variable
-       */
-       sortType: constants.sortType,
-      /**
        * Return a state error
        * @param {String} sStatus status
        * @return {sap.ui.core.ValueState}
@@ -32,13 +28,13 @@ sap.ui.define(
        */
       sortTypeFormatter: function (sSortType) {
         switch (sSortType) {
-          case this.sortType.NONE: {
+          case constants.sortType.NONE: {
             return "sort";
           }
-          case this.sortType.ASC: {
+          case constants.sortType.ASC: {
             return "sort-ascending";
           }
-          case this.sortType.DESC: {
+          case constants.sortType.DESC: {
             return "sort-descending";
           }
           default: {
@@ -61,7 +57,7 @@ sap.ui.define(
             return ValueState.Warning;
           }
           case "Ok": {
-            return ValueState.Warning;
+            return ValueState.Success;
           }
           default: {
             return ValueState.None;

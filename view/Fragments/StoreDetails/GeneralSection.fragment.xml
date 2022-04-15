@@ -1,24 +1,11 @@
 <core:FragmentDefinition xmlns="sap.m"
     xmlns:f="sap.ui.layout.form"
     xmlns:core="sap.ui.core">
-    <f:SimpleForm editable="true"
-    layout="ColumnLayout"
-    labelSpanXL="4"
-    labelSpanL="4"
-    labelSpanM="4"
-    labelSpanS="12"
-    emptySpanXL="0"
-    emptySpanL="0"
-    emptySpanM="0"
-    emptySpanS="0"
-    columnsXL="2"
-    columnsL="2"
-    columnsM="2"
-    singleContainerFullSize="false">
+    <f:SimpleForm editable="true" layout="ColumnLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
         <f:content>
             <Label text="{i18n>labelEmail}" class="sapUiNoContentPadding" />
             <Text text="{Email}" class="sapUiNoContentPadding" visible="{= !${/isEdit}}" />
-            <Input  required="{/isEdit}" fieldGroupIds="storeDetailsInput" value="{
+            <Input required="{/isEdit}" fieldGroupIds="storeDetailsInput" value="{
                 path: 'Email',
                 type: 'sap.ui.model.type.String',
                 constraints: {
@@ -27,7 +14,7 @@
                 }}" visible="{/isEdit}" change=".onChangeInput" name="Email"/>
             <Label text="{i18n>labelPhoneNumber}" />
             <Text text="{PhoneNumber}" visible="{= !${/isEdit}}" />
-            <MaskInput  required="{/isEdit}" fieldGroupIds="storeDetailsInput" value="{path: 'PhoneNumber',
+            <MaskInput required="{/isEdit}" fieldGroupIds="storeDetailsInput" value="{path: 'PhoneNumber',
                     type: 'sap.ui.model.type.String', 
                     constraints: {
                         minLength: 3
@@ -39,7 +26,7 @@
             </MaskInput>
             <Label text="{i18n>labelAddress}" />
             <Text text="{Address}" visible="{= !${/isEdit}}" />
-            <Input  required="{/isEdit}" fieldGroupIds="storeDetailsInput" visible="{/isEdit}" value="{
+            <Input required="{/isEdit}" fieldGroupIds="storeDetailsInput" visible="{/isEdit}" value="{
                 path: 'Address',
                 type: 'sap.ui.model.type.String',
                 constraints: {
@@ -58,7 +45,7 @@
                     }
                 }
             }" wrapping="false" visible="{= !${/isEdit}}" validationError="onChangeInput" />
-            <DatePicker  fieldGroupIds="storeDetailsInput" value="{
+            <DatePicker fieldGroupIds="storeDetailsInput" value="{
                 path: 'Established',
                 type: 'sap.ui.model.type.Date',
                 formatOptions: {
@@ -77,6 +64,12 @@
                 path: 'FloorArea',
                 type: 'sap.ui.model.type.Float'
                 }" change=".onChangeInput" name="FloorArea" />
+            <Label text="{i18n>labelStatus}" />
+            <Text text="{Status}" visible="{= !${/isEdit}}" />
+            <Select selectedKey='{Status}' visible="{/isEdit}" forceSelection="false" resetOnMissingKey='true'>
+                <core:Item key="Open" text="{i18n>selectItemStatusOpen}" />
+                <core:Item key="Close" text="{i18n>selectItemStatusClose}" />
+            </Select>
         </f:content>
     </f:SimpleForm>
 </core:FragmentDefinition>
